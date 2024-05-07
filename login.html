@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="style-login.css">
+    <link rel="stylesheet" href="custom-styles.css"> <!-- Enlace al archivo de estilo personalizado -->
+</head>
+<body>
+    <div class="login-container">
+        <h2>Iniciar sesión</h2>
+        <form action="procesar-registro.php" method="post">
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+        <div class="social-login">
+            <button class="google-btn" onclick="window.location.href='https://accounts.google.com/';">Iniciar sesión con Google</button>
+            <button class="facebook-btn" onclick="window.location.href='https://www.facebook.com/';">Iniciar sesión con Facebook</button>
+        </div>
+        <div class="register-link">
+            <p>¿No tienes una cuenta? <a href="registro.html">Registrarse</a></p>
+            <button class="continue-guest-btn" onclick="window.location.href='index.html';">Continuar como invitado</button>
+        </div>
+    </div>
+</body>
+</html>
+
